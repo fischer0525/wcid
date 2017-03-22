@@ -1,0 +1,32 @@
+<h1><%= @event.event_name %></h1>
+<% if @event.neighborhood %>
+  <p><%= @event.neighborhood %></p>
+<% end %>
+
+<p><%= @event.event_date %> </p>
+<p><%= @event.event_time %> </p>
+<p><%= @event.address %> </p>
+<p><%= @event.city%>, <%=@bar.state%> <%=@bar.zip%></p>
+<p><%= @bar.phone_number %></p>
+
+<% if @user.contact_number %>
+  <p>Contact Number: <%= @user.contact_number %></p>
+<% end %>
+
+<p><%= @event.description %></p>
+
+<% if current_user %>
+  <% if current_user.admin? %>
+    <%= link_to "Edit Event", edit_event_path %>
+    <%= link_to "Delete Event", @event, method: :delete %>
+  <% end %>
+<% end %>
+
+<% if @user == current_user %>
+  <%= link_to "Edit Review", edit_event_path %>
+  <%= link_to "Delete Event", @event, method: :delete %>
+<% end %>
+
+
+
+<%= link_to "Go Back", events_path %>
