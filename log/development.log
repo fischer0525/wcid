@@ -900,3 +900,353 @@ app/assets/stylesheets/foundation_and_overrides.scss:21
   Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.2ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/coreyfischer/challenges/wcid-app/config/environment.rb:5)
+Started GET "/" for ::1 at 2017-03-22 15:51:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 817ms (Views: 803.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:52:00 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+Started GET "/" for ::1 at 2017-03-22 15:52:07 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 125ms (Views: 123.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:52:07 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.0ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.2ms)
+Started GET "/home" for ::1 at 2017-03-22 15:53:58 -0400
+Started GET "/" for ::1 at 2017-03-22 15:53:58 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 187ms (Views: 184.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:53:59 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.6ms)
+Started GET "/" for ::1 at 2017-03-22 15:54:21 -0400
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 125ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:54:21 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+Started GET "/home" for ::1 at 2017-03-22 15:54:30 -0400
+Started GET "/" for ::1 at 2017-03-22 15:54:30 -0400
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:54:30 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.8ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.8ms)
+Started GET "/" for ::1 at 2017-03-22 15:56:13 -0400
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 145.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:56:13 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.9ms)
+Started GET "/" for ::1 at 2017-03-22 15:56:47 -0400
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 15:56:47 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.8ms)
+Started GET "/" for ::1 at 2017-03-22 16:29:59 -0400
+  
+LoadError (cannot load such file -- /Users/coreyfischer/.gem/ruby/2.3.3/gems/high_voltage-3.0.0/config/routes.rb):
+  
+activesupport (5.0.2) lib/active_support/dependencies.rb:287:in `load'
+activesupport (5.0.2) lib/active_support/dependencies.rb:287:in `block in load'
+activesupport (5.0.2) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.2) lib/active_support/dependencies.rb:287:in `load'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:40:in `each'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:16:in `reload!'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+activesupport (5.0.2) lib/active_support/file_update_checker.rb:77:in `execute'
+railties (5.0.2) lib/rails/application/routes_reloader.rb:7:in `execute'
+railties (5.0.2) lib/rails/application/finisher.rb:132:in `block (2 levels) in <module:Finisher>'
+activesupport (5.0.2) lib/active_support/callbacks.rb:396:in `instance_exec'
+activesupport (5.0.2) lib/active_support/callbacks.rb:396:in `block in make_lambda'
+activesupport (5.0.2) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:547:in `block (2 levels) in default_terminator'
+activesupport (5.0.2) lib/active_support/callbacks.rb:546:in `catch'
+activesupport (5.0.2) lib/active_support/callbacks.rb:546:in `block in default_terminator'
+activesupport (5.0.2) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.2) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_run_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+activesupport (5.0.2) lib/active_support/execution_wrapper.rb:108:in `run!'
+activesupport (5.0.2) lib/active_support/reloader.rb:113:in `run!'
+activesupport (5.0.2) lib/active_support/execution_wrapper.rb:70:in `block in run!'
+activesupport (5.0.2) lib/active_support/execution_wrapper.rb:67:in `tap'
+activesupport (5.0.2) lib/active_support/execution_wrapper.rb:67:in `run!'
+activesupport (5.0.2) lib/active_support/reloader.rb:59:in `run!'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:10:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.8ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.7ms)
+Started GET "/" for ::1 at 2017-03-22 16:31:13 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 253ms (Views: 237.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 16:31:13 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+Started GET "/" for ::1 at 2017-03-22 16:31:30 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 134ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 16:31:31 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+Started GET "/" for ::1 at 2017-03-22 16:32:12 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 16:32:12 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.2ms)
+Started GET "/" for ::1 at 2017-03-22 16:38:58 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 152ms (Views: 149.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 16:38:58 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.4ms)
+Started GET "/" for ::1 at 2017-03-22 16:39:06 -0400
+Processing by EventsController#index as HTML
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/foundation_and_overrides" for ::1 at 2017-03-22 16:39:06 -0400
+  
+Sass::SyntaxError ($color: "foreground(#2199e8)" is not a color for `red'):
+  
+app/assets/stylesheets/foundation_and_overrides.scss:21
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/coreyfischer/.gem/ruby/2.3.3/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/coreyfischer/challenges/wcid-app/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/coreyfischer/challenges/wcid-app/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5102133650745540885);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUserEvents (20170321134012)
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.6ms)[0m  [1m[35mDROP TABLE "user_events"[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170321134012"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5102133650745540885)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/coreyfischer/challenges/wcid-app/config/environment.rb:5)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5102133650745540885);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20170315021332)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE "events"[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20170315021332"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5102133650745540885)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/coreyfischer/challenges/wcid-app/config/environment.rb:5)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5102133650745540885);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEvents (20170315021332)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" serial primary key, "user_id" integer, "event_date" character varying NOT NULL, "event_time" character varying NOT NULL, "event_name" character varying NOT NULL, "address" character varying NOT NULL, "city" character varying NOT NULL, "state" character varying NOT NULL, "zip" character varying NOT NULL, "neighborhood" character varying, "description" character varying NOT NULL)[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315021332"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5102133650745540885)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m

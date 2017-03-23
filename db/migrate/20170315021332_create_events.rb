@@ -1,6 +1,7 @@
 class CreateEvents < ActiveRecord::Migration[5.0]
   def change
     create_table :events do |t|
+      t.integer :user_id
       t.string :event_date, null: false
       t.string :event_time, null: false
       t.string :event_name, null: false
