@@ -29,6 +29,7 @@ group :development, :test do
   gem 'shoulda'
   gem 'valid_attribute'
   gem 'database_cleaner'
+  gem 'coveralls', require: false
 end
 
 group :production do

@@ -1,3 +1,5 @@
+<a href='https://coveralls.io/github/fischer0525/wcid?branch=master'><img src='https://coveralls.io/repos/github/fischer0525/wcid/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 == README
 
 This README would normally document whatever steps are necessary to get the
