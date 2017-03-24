@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-
+before_action :authorize_user, except: [:index, :show]
 
   def index
     @events = Event.search(params[:term])
@@ -60,5 +60,11 @@ class EventsController < ApplicationController
     params.require(:event).permit(:user_id, :event_date, :event_time, :event_name, :organization, :address, :city, :state, :zip, :description, :term)
   end
 
+  def authorize_user
+    if !user_signed_in?
+      flash[:notice] = "This page doesn't exist"
+      redirect_to root_path
+    end
+  end
 
 end

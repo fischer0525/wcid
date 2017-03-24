@@ -6,8 +6,7 @@
 <p><%= @event.event_date %> </p>
 <p><%= @event.event_time %> </p>
 <p><%= @event.address %> </p>
-<p><%= @event.city%>, <%=@bar.state%> <%=@bar.zip%></p>
-<p><%= @bar.phone_number %></p>
+<p><%= @event.city%>, <%=@event.state%> <%=@bar.zip%></p>
 
 <% if @user.contact_number %>
   <p>Contact Number: <%= @user.contact_number %></p>
@@ -15,12 +14,6 @@
 
 <p><%= @event.description %></p>
 
-<% if current_user %>
-  <% if current_user.admin? %>
-    <%= link_to "Edit Event", edit_event_path %>
-    <%= link_to "Delete Event", @event, method: :delete %>
-  <% end %>
-<% end %>
 
 <% if @user == current_user %>
   <%= link_to "Edit Review", edit_event_path %>
