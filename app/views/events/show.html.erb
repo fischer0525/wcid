@@ -1,25 +1,33 @@
-<h1><%= @event.event_name %></h1>
-<% if @event.neighborhood %>
-  <p><%= @event.neighborhood %></p>
-<% end %>
+<div class="row">
+  <div class="large-6 columns">
+    <h1><%= @event.event_name %></h1>
+    <hr></hr>
+    <h3>
+    <% if @event.neighborhood %>
+    Neighborhood: <%= @event.neighborhood %>
+    &emsp;<%= @event.event_date %>&emsp;<%= @event.event_time %></h3>
+    <% end %>
+    <% if @user == current_user %>
+      <%= link_to "Edit Event", edit_event_path %>
+      <%= link_to "Delete Event", @event, method: :delete %>
+    <% end %>
+    <br></br>
+    <p><%= @event.address %> <%= @event.city%>, <%=@event.state%> <%=@event.zip%>
+      <% if @user.contact_number %>
+      | Contact: <%= @user.contact_number %></p>
+    <% end %>
+  </div>
+  <div class="large-6 columns">
+    <h1>Event Description</h1>
+    <hr></hr>
+    <h3><%= @event.description %></h3>
+  </div>
 
-<p><%= @event.event_date %> </p>
-<p><%= @event.event_time %> </p>
-<p><%= @event.address %> </p>
-<p><%= @event.city%>, <%=@event.state%> <%=@bar.zip%></p>
-
-<% if @user.contact_number %>
-  <p>Contact Number: <%= @user.contact_number %></p>
-<% end %>
-
-<p><%= @event.description %></p>
-
-
-<% if @user == current_user %>
-  <%= link_to "Edit Review", edit_event_path %>
-  <%= link_to "Delete Event", @event, method: :delete %>
-<% end %>
-
-
-
-<%= link_to "Go Back", events_path %>
+      <div id="map"></div>
+      <input id="address" type="hidden" value="<%= @event.address %>">
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_MAPS_API_KEY']%>&callback=initMap">
+      </script>
+      <%= link_to "Go Back", events_path %>
+  </div>
+</div>

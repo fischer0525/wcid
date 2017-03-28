@@ -1,39 +1,85 @@
-<h2>Sign up</h2>
+
+
+<div class = "row">
+  <div class = "small-offset-3 small-6 columns">
+    <h1 style="text-align:center">Sign Up</h1>
+  </div>
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :profile_photo, "Profile Photo" %>
-    <%= f.file_field :profile_photo %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :username, class: 'input-group-label' %>
+      <%= f.text_field :username, autofocus: true %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
   </div>
 
-  <div class="field">
-    <%= f.label :username %><br />
-    <%= f.text_field :username, autofocus: true %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :email, class: 'input-group-label' %>
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
   </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :contact_number, class: 'input-group-label' %>
+      <%= f.text_field :contact_number, autofocus: true %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :organization, class: 'input-group-label' %>
+      <%= f.email_field :organization, autofocus: true %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :password, class: 'input-group-label' %>
+      <%= f.password_field :password, autocomplete: "off" %>
+      <% if @minimum_password_length %>
+      <p><em>(<%= @minimum_password_length %> characters minimum)</em></p>
+      <% end %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <%= f.label :password_confirmation, "Password Confirmation", class: 'input-group-label' %>
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+    <div class = "small-offset-3 columns"></div>
+  </div>
+
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <h6 style="text-align:center">
+        <%= f.label :profile_photo, "Profile Photo" %>
+      <%= f.file_field :profile_photo%></h6>
+    </div>
+    <div class = "small-offset-3 columns"></div>
+  </div>
+
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+      <h3 style="text-align:center"><%= f.submit "Sign Up"%></h3>
+        <br></br>
+      <h3 style="text-align:center"><%= render "devise/shared/links" %></h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class = "small-offset-3 small-6 columns">
+        <h3 style="text-align:center"><%= link_to "Go Back", homes_path %></h3>
+    </div>
   </div>
 <% end %>
-
-<%= render "devise/shared/links" %>

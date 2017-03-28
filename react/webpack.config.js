@@ -8,6 +8,14 @@ var config = {
   },
   module: {
     loaders: [
+    {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000'
+    }
+  ]
+},
+  module: {
+    loaders: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,

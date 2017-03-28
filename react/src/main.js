@@ -5,8 +5,11 @@ import EventList from './components/EventList';
 
 
 $(function() {
-  ReactDOM.render(
-    <EventList />,
-    document.getElementById('events')
-  );
+  let reactApp = document.getElementById('events')
+  if(reactApp){
+    ReactDOM.render(
+      <EventList />,
+      reactApp
+    );
+  };
 });

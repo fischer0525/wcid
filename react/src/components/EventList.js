@@ -60,14 +60,14 @@ class EventList extends Component {
       this.handleEventSelect(listEvent.id);
       }
     }
-    let selected;
+    let className;
     let buttonValue
     if(listEvent.id===this.state.selectedEventId){
-      selected="selected"
-      buttonValue=<i className="fa fa-minus-square fa-2x" aria-hidden="true" />
+      className="selected"
+      buttonValue=<a href="#" className="button small">Hide Description</a>
     }else{
-      selected="not-selected"
-      buttonValue=<i className="fa fa-plus-square fa-2x" aria-hidden="true" />
+      className="not-selected"
+      buttonValue=<a href="#" className="button small">View Description</a>
 
     }
       return (
@@ -86,16 +86,16 @@ class EventList extends Component {
           picture={listEvent.user.profile_photo}
           org={listEvent.user.organization}
           email={listEvent.user.email}
-          contact={listevent.user.contact_number}
+          contact={listEvent.user.contact_number}
           buttonClick={buttonClick}
-          selected={className}
+          className={className}
           buttonValue={buttonValue}
         />
       )
     });
 
     let pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(this.state.items.length / this.state.itemsPerPage); i++){
+    for (let i = 1; i <= Math.ceil(this.state.events.length / this.state.eventsPerPage); i++){
       pageNumbers.push(i);
     }
 

@@ -1,45 +1,80 @@
-<%= form_for (event), do |f| %>
-<div class="field">
-  <%= f.label :event_name %><br />
-  <%= f.text_field :event_name%>
-</div>
+<%= form_for (@event) do |f| %>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :event_name, "Event Name" %>
+        <%= f.text_field :event_name, placeholder: "Name of Event" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :event_date %><br />
-  <%= f.text_field :event_date%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :event_date, "Event Date" %>
+        <%= f.text_field :event_date, placeholder: "mm/dd/yy" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :event_time %><br />
-  <%= f.text_field :event_time%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :event_time, "Event Time" %>
+        <%= f.text_field :event_time, placeholder: "e.g. 12:00 PM" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :address %><br />
-  <%= f.text_field :address%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :address %>
+        <%= f.text_field :address, placeholder: "e.g. 123 Main St" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :city %><br />
-  <%= f.text_field :city%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :city %>
+        <%= f.text_field :city, placeholder:"" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :state %><br />
-  <%= f.text_field :state%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :state %>
+        <%= f.text_field :state, placeholder: "" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :zip %><br />
-  <%= f.text_field :zip%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :zip %>
+        <%= f.text_field :zip, placeholder: "5 digits" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :neighborhod %><br />
-  <%= f.text_field :neighborhod%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :neighborhood %>
+        <%= f.text_field :neighborhood, placeholder: "e.g. Fairmount" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
 
-<div class="field">
-  <%= f.label :description %><br />
-  <%= f.text_field :description%>
-</div>
+  <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.label :description %>
+        <%= f.text_box :description, placeholder: "Description of event" %>
+      </div>
+      <div class = "small-offset-3 columns"></div>
+    </div>
+
+    <div class="row">
+      <div class = "small-offset-3 small-6 columns">
+        <%= f.submit "Create Event"%>
+      </div>
+      <div class = "small-offset-3 small-6 columns"></div>
+    </div>
+<% end%>
