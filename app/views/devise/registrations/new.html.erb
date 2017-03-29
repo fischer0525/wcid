@@ -46,7 +46,7 @@
       <%= f.label :password, class: 'input-group-label' %>
       <%= f.password_field :password, autocomplete: "off" %>
       <% if @minimum_password_length %>
-      <p><em>(<%= @minimum_password_length %> characters minimum)</em></p>
+      <p style="text-align:center"><em>(<%= @minimum_password_length %> characters minimum)</em></p>
       <% end %>
     </div>
     <div class = "small-offset-3 columns"></div>
@@ -63,8 +63,8 @@
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
       <h6 style="text-align:center">
-        <%= f.label :profile_photo, "Profile Photo" %>
-      <%= f.file_field :profile_photo%></h6>
+        <%= f.label :profile_photo, "Profile Photo" %></h6>
+      <h6 style="text-align:center"><%= f.file_field :profile_photo%></h6>
     </div>
     <div class = "small-offset-3 columns"></div>
   </div>
