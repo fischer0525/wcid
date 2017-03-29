@@ -101,7 +101,7 @@ class EventList extends Component {
 
     let renderPageNumbers = pageNumbers.map(number => {
       return (
-        <a className="tiny button"
+        <a className="small button"
           key={number}
           id={number}
           onClick={this.handleClick}

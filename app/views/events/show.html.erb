@@ -8,8 +8,8 @@
     &emsp;<%= @event.event_date %>&emsp;<%= @event.event_time %></h3>
     <% end %>
     <% if @user == current_user %>
-      <%= link_to "Edit Event", edit_event_path %>
-      <%= link_to "Delete Event", @event, method: :delete %>
+      <%= link_to "Edit Event |", edit_event_path %>
+      <%= link_to " Delete Event", @event, method: :delete %>
     <% end %>
     <br></br>
     <p><%= @event.address %> <%= @event.city%>, <%=@event.state%> <%=@event.zip%>

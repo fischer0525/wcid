@@ -6,20 +6,17 @@ var config = {
     path: './app/assets/javascripts',
     filename: 'bundle.js'
   },
-  module: {
-    loaders: [
-    {
-      test: /\.(png|jpg)$/,
-      loader: 'url?limit=25000'
-    }
-  ]
-},
+
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'
+      },
+      }
+        test: /\.(png|jpg)$/,
+        loader: 'url?limit=25000'
       }
     ]
   },
