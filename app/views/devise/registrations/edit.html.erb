@@ -1,12 +1,12 @@
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
-    <h2>My Account</h2>
+    <h2 style="text-align:center">My Account</h2>
     </div>
   </div>
 
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
-      <h3>Edit <%= resource_name.to_s.humanize %></h3>
+      <h3 style="text-align:center">Edit <%= resource_name.to_s.humanize %></h3>
     </div>
   </div>
 
@@ -23,8 +23,8 @@
 
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
-      <%= f.label :profile_photo, "Profile Photo" %>
-      <%= f.file_field :profile_photo%>
+      <p style="text-align:center"><%= f.label :profile_photo, "Profile Photo" %></p>
+      <p style="text-align:center" class="profile-photo-button"><%= f.file_field :profile_photo%></p>
     </div>
     <div class = "small-offset-3 columns"></div>
   </div>
@@ -72,7 +72,7 @@
 <div class="row">
   <% if @minimum_password_length %>
   <div class = "small-offset-3 small-6 columns">
-    <p><em><%= @minimum_password_length %> characters minimum</em></p>
+    <p style="text-align:center"><em><%= @minimum_password_length %> characters minimum</em></p>
   </div>
   <div class = "small-offset-3 columns"></div>
   <% end %>
@@ -82,7 +82,7 @@
     <div class = "small-offset-3 small-6 columns">
       <%= f.label :password, class: 'input-group-label' %>
       <%= f.password_field :password, autocomplete: "off" %>
-      <p><i>(leave blank if you want to keep your current password)</i></p>
+      <p style="text-align:center"><i>(leave blank if you want to keep your current password)</i></p>
     </div>
     <div class = "small-offset-3 columns"></div>
   </div>
@@ -91,7 +91,7 @@
     <div class = "small-offset-3 small-6 columns">
       <%= f.label :password_confirmation, "Password Confirmation", class: "input-group-label" %>
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
-      <p><i>(leave blank if you want to keep your current password)</i></p>
+      <p style="text-align:center"><i>(leave blank if you want to keep your current password)</i></p>
     </div>
     <div class = "small-offset-3 columns"></div>
   </div>
@@ -100,14 +100,14 @@
     <div class = "small-offset-3 small-6 columns">
       <%= f.label :current_password, "Current Password", class: "input-group-label" %>
       <%= f.password_field :current_password, autocomplete: "off" %>
-      <p><i>(we need your current password to confirm your changes)</i></p>
+      <p style="text-align:center"><i>(we need your current password to confirm your changes)</i></p>
     </div>
     <div class = "small-offset-3 columns"></div>
   </div>
 
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
-      <%= f.submit "Update"%>
+      <h3 style="text-align:center"><%= f.submit "Update"%></h3>
     </div>
     <div class = "small-offset-3 small-6 columns"></div>
   </div>
@@ -115,14 +115,14 @@
 </br>
 <div class="row">
   <div class = "small-offset-3 small-6 columns">
-    <h3 class="text-left">Cancel my account</h3>
-    <p class="text-left">Unhappy? <%= button_to "Delete Account", registration_path(resource_name), method: :delete%></p>
+    <h3 style="text-align:center"><i>Unhappy?<i></h3>
+    <p style="text-align:center">Cancel my account <div class="delete-button" <%= button_to "Delete Account", registration_path(resource_name), method: :delete, class: "delete-button"%></div></p>
   </div>
 </div>
 </br>
 <div class="row">
   <div class = "small-offset-3 small-6 columns">
-      <%= link_to "Go Back", root_path %>
+      <h3 style="text-align:center"><%= link_to "Go Back", root_path %></h3>
     </div>
   </div>
   <div class = "small-offset-3 columns">
