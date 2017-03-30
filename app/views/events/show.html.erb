@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="large-6 columns">
+  <div class="large-7 columns">
     <h1><%= @event.event_name %></h1>
     <hr></hr>
     <h3>
@@ -17,17 +17,17 @@
       | Contact: <%= @user.contact_number %></p>
     <% end %>
   </div>
-  <div class="large-6 columns">
+  <div class="large-5 columns">
     <h1>Event Description</h1>
     <hr></hr>
     <h3><%= @event.description %></h3>
   </div>
 
-      <div id="map"></div>
+    <div id="map">
       <input id="address" type="hidden" value="<%= @event.address %>">
       <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_MAPS_API_KEY']%>&callback=initMap">
       </script>
-      <%= link_to "Go Back", events_path %>
-  </div>
+    </div>
+    <div class="large-7 columns-left"><%= link_to "Go Back", events_path %></div>
 </div>

@@ -41,6 +41,13 @@
 //     from { opacity: 0; }
 //     to   { opacity: 1; }
 // }
+.large-7.columns-left {
+  a {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #007FFF;
+  }
+}
 
 .small.button.page:hover {
     background-color: #ffffff;
@@ -172,7 +179,7 @@ body.controller-homes{
   }
 }
 
-.large-6.columns {
+.large-7.columns {
   a {
     font-family: "Open Sans";
     font-size: 25px;
