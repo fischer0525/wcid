@@ -9,7 +9,7 @@ class ListEvent extends React.Component {
 
     return (
       <div className="row">
-          <p><img src="../../../assets/images/`${this.props.picture}`"/> {this.props.org}</p>
+          <p><img src={this.props.picture} className="image"/> {this.props.org}</p>
           <p> {this.props.name} {this.props.date} {this.props.time} {this.props.neighborhod}</p>
           <button onClick={this.props.buttonClick}> {this.props.buttonValue} </button>
           <p className={this.props.className}> {this.props.description}<a href={`events/${this.props.id}`}> More Information</a> </p>
