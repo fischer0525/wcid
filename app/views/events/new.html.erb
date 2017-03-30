@@ -1,79 +1,79 @@
 <%= form_for (@event) do |f| %>
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :event_name, "Event Name" %>
-        <%= f.text_field :event_name, placeholder: "Name of Event" %>
+        <p style="text-align:center"><%= f.label :event_name, "Event Name" %></p>
+        <p style="text-align:center"><%= f.text_field :event_name, placeholder: "Name of Event" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :event_date, "Event Date" %>
-        <%= f.text_field :event_date, placeholder: "mm/dd/yy" %>
+        <p style="text-align:center"><%= f.label :event_date, "Event Date" %></p>
+        <p style="text-align:center"><%= f.text_field :event_date, placeholder: "mm/dd/yy" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :event_time, "Event Time" %>
-        <%= f.text_field :event_time, placeholder: "e.g. 12:00 PM" %>
+        <p style="text-align:center"><%= f.label :event_time, "Event Time" %></p>
+        <p style="text-align:center"><%= f.text_field :event_time, placeholder: "e.g. 12:00 PM" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :address %>
-        <%= f.text_field :address, placeholder: "e.g. 123 Main St" %>
+        <p style="text-align:center"><%= f.label :address %></p>
+        <p style="text-align:center"><%= f.text_field :address, placeholder: "e.g. 123 Main St" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :city %>
-        <%= f.text_field :city, placeholder:"" %>
+        <p style="text-align:center"><%= f.label :city %></p>
+        <p style="text-align:center"><%= f.text_field :city, placeholder:"" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :state %>
-        <%= f.text_field :state, placeholder: "" %>
+        <p style="text-align:center"><%= f.label :state %></p>
+        <p style="text-align:center"><%= f.text_field :state, placeholder: "" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :zip %>
-        <%= f.text_field :zip, placeholder: "5 digits" %>
+        <p style="text-align:center"><%= f.label :zip %></p>
+        <p style="text-align:center"><%= f.text_field :zip, placeholder: "5 digits" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :neighborhood %>
-        <%= f.text_field :neighborhood, placeholder: "e.g. Fairmount" %>
+        <p style="text-align:center"><%= f.label :neighborhood %></p>
+        <p style="text-align:center"><%= f.text_field :neighborhood, placeholder: "e.g. Fairmount" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
   <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.label :description %>
-        <%= f.text_area :description, placeholder: "Description of event" %>
+        <p style="text-align:center"><%= f.label :description %></p>
+        <p style="text-align:center"><%= f.text_area :description, placeholder: "Description of event" %></p>
       </div>
       <div class = "small-offset-3 columns"></div>
     </div>
 
     <div class="row">
       <div class = "small-offset-3 small-6 columns">
-        <%= f.submit "Create Event"%>
+        <p style="text-align:center"><%= f.submit "Create Event"%></p>
       </div>
       <div class = "small-offset-3 small-6 columns"></div>
     </div>
