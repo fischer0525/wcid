@@ -14,7 +14,7 @@ class User < ApplicationRecord
   validates :contact_number, presence: true, uniqueness: true, format: { with: /\A\(?\d{3}\)?\-?\d{3}\-?\d{4}\z/ }
   has_many :events, dependent: :destroy
 
-  mount_uploader :profile_photo, ProfilePhotoUploader
+  # mount_uploader :profile_photo, ProfilePhotoUploader
 
   def admin?
     admin == true

@@ -49,6 +49,17 @@
   }
 }
 
+.small.button.page:hover {
+    background-color: #ffffff;
+    color: #007FFF;
+    cursor:pointer;
+}
+.image{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
 body.controller-homes{
   background-image: url(/assets/philadelphia_blue_pin.png);
   background-repeat: no-repeat;
