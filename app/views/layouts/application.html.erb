@@ -19,7 +19,7 @@
     <div class="top-bar-right">
       <%= form_tag(events_path, method: :get) do %>
       <ul class="menu">
-        <li><%= text_field_tag :term, params[:term] %></li>
+        <li class="searchwrap"><%= text_field_tag :term, params[:term], placeholder: "Neighborhood, address, zip...", class: "searchfield" %></li>
         <li><%= submit_tag 'Search', name: nil, class: "button" %></li>
         <% end %>
       <% if request.env['PATH_INFO'] != "/users/sign_up" && request.env['PATH_INFO'] != "/users/sign_in" && request.env['PATH_INFO'] != "/users/edit" %>
