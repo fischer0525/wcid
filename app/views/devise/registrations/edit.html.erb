@@ -108,7 +108,7 @@
 
   <div class="row">
     <div class = "small-offset-3 small-6 columns">
-      <h3 style="text-align:center"><%= f.submit "Update"%></h3>
+      <h3 style="text-align:center"><%= f.submit "Update", class: "submit" %></h3>
     </div>
     <div class = "small-offset-3 small-6 columns"></div>
   </div>
@@ -117,7 +117,7 @@
 <div class="row">
   <div class = "small-offset-3 small-6 columns">
     <h3 style="text-align:center"><i>Unhappy?<i></h3>
-    <p style="text-align:center">Cancel my account <div class="delete-button" <%= button_to "Delete Account", registration_path(resource_name), method: :delete, class: "delete-button"%></div></p>
+    <p style="text-align:center">Cancel my account <div style="text-align:center" <%= button_to "Delete Account", registration_path(resource_name), method: :delete, class: "submit"%></div></p>
   </div>
 </div>
 </br>
