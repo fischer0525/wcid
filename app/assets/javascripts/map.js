@@ -14,6 +14,7 @@ function initMap() {
 
 function geocodeAddress(geocoder, resultsMap) {
   console.log("geocode initiated")
+  console.log(document.getElementById('address'))
   var address = document.getElementById('address').value;
   geocoder.geocode({'address': address}, function(results, status) {
     if (status === 'OK') {

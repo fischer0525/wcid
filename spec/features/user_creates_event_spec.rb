@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-# As an admin
+# As a user
 # I would like to create a new bar
 # So that the users can see this new bar
 
@@ -29,18 +29,17 @@ feature 'create a bar link is available to user' do
   end
 end
 
-feature 'create a bar link is only available to admin' do
+feature 'create event link is only available to user' do
   let(:user) {FactoryGirl.create(:user)}
-  let(:admin) { FactoryGirl.create(:user, admin: true) }
 
-  scenario "Unauthorized user is unable to use direct path to new bar form" do
-    visit new_bar_path
+  scenario "Unauthorized user is unable to use direct path to new event form" do
+    visit new_event_path
 
     expect(page).to have_content("This page doesn't exist")
   end
 
 
-  scenario "Authorized user is able to use direct path to new bar form" do
+  scenario "Authorized user is able to use direct path to new event form" do
     admin
     visit new_user_session_path
     fill_in 'Email', with: user.email
@@ -66,14 +65,16 @@ feature 'create a bar link is only available to admin' do
     click_button 'Sign In'
     visit new_event_path
 
-    fill_in "Name", with: "New Event"
+    fill_in "Event Name", with: "New Event"
+    fill_in "Event Date", with: "01/01/11"
+    fill_in "Event Time", with: "1:00PM"
     fill_in "Address", with: "100 Market St"
     fill_in "City", with: "Philly"
     fill_in "State", with: "PA"
     fill_in "Zip", with: '19136'
-    fill_in "Phone Number", with: '111-222-3333'
+    fill_in "Neighborhood", with: 'Kensington'
     fill_in "Description", with: "Food drive."
-    click_button "Submit"
+    click_button "Create Event"
 
     expect(page).to have_content("New Event")
     expect(page).to have_content("Event Added Successfully")
@@ -86,29 +87,21 @@ feature 'create a bar link is only available to admin' do
     click_button 'Sign In'
     visit new_bar_path
 
-    fill_in "Name", with: "NewBar"
-    fill_in "Address", with: "123 free street"
+    fill_in "Event Name", with: "New Event"
+    fill_in "Event Date", with: "01/01/11"
+    fill_in "Event Time", with: "1:00PM"
+    fill_in "Address", with: "100 Market St"
     fill_in "City", with: "Philly"
-    select "PA", from: "State"
-    fill_in "Zip", with: '12345'
-    fill_in "Phone Number", with: '111-222-333'
-    fill_in "Description", with: "Great"
-    click_button "Submit"
+    fill_in "State", with: "PA"
+    fill_in "Zip", with: '1913'
+    fill_in "Neighborhood", with: 'Kensington'
+    fill_in "Description", with: "Food drive."
+    click_button "Create Event"
 
-    expect(page).to_not have_content("NewBar")
-    expect(page).to_not have_content("Bar Added Successfully")
-    expect(page).to have_content("Phone number is invalid")
+    expect(page).to_not have_content("NewEvent")
+    expect(page).to_not have_content("Event Added Successfully")
+    expect(page).to have_content("Zip is the wrong length")
   end
 
-  scenario "user tries to create bar" do
-    visit new_user_session_path
-    fill_in 'Email', with: user.email
-    fill_in 'Password', with: user.password
-    click_button 'Sign In'
-    visit new_bar_path
 
-    visit new_bar_path
-    expect(page).to have_content("This page doesn't exist")
-    expect(page).to_not have_content("Submit")
-  end
 end

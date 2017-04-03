@@ -29,7 +29,7 @@ before_action :authorize_user, except: [:index, :show]
   end
 
   def edit
-    @bar = Event.find(params[:id])
+    @event = Event.find(params[:id])
   end
 
   def update
@@ -37,7 +37,7 @@ before_action :authorize_user, except: [:index, :show]
     @event.assign_attributes(event_params)
 
     if @event.valid?
-      @bar.save
+      @event.save
       flash[:notice] = "Event Edited Successfully"
       redirect_to @event
     else
@@ -50,7 +50,7 @@ before_action :authorize_user, except: [:index, :show]
     @event = Event.find(params[:id])
     @Event.delete
 
-    flash[:notice] = "Event Deleted"
+    flash[:notice] = "Event Deleted Successfully"
     redirect_to root_path
   end
 

@@ -8,7 +8,7 @@ class ListEvent extends React.Component {
   render() {
 
     return (
-      <div className="row">
+      <div className="row event">
           <p><img src={this.props.picture} className="image"/> {this.props.org}</p>
           <p> {this.props.name} {this.props.date} {this.props.time} {this.props.neighborhod}</p>
           <button onClick={this.props.buttonClick}> {this.props.buttonValue} </button>

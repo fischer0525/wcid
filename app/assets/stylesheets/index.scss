@@ -1,4 +1,4 @@
-// // #2077BC
+
 // #welcome h1 {
 //   vertical-align: text-bottom;
 //     font-size: 56px;
@@ -41,6 +41,121 @@
 //     from { opacity: 0; }
 //     to   { opacity: 1; }
 // }
+.small-6.large-12.columns {
+  a {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #007FFF;
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.row.event {
+  overflow: hidden;
+}
+.panel.callout.radius1 {
+  h1 {
+    font-size: 112px;
+    font-style: normal;
+    text-decoration: underline;
+    line-height: normal;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 82px;
+    line-height: normal;
+    color: #ffffff;
+  }
+  a {
+    font-family: "Open Sans";
+    text-decoration:none;
+    font-size: 82px;
+    color: #ffffff;
+    cursor:pointer;
+  }
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #007FFF;
+  border: none;
+}
+
+.panel.callout.radius2 {
+  h1 {
+    font-size: 40px;
+    font-style: normal;
+    text-decoration: underline;
+    line-height: normal;
+    font-weight: 900;
+    color: #007FFF;
+  }
+  h2 {
+    font-size: 25px;
+    line-height: normal;
+    color: #007FFF;
+  }
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid;
+  border-color: #007FFF;
+}
+
+#slogan {
+  margin-left: 505px;
+}
+
+footer.controller-contacts {
+margin-bottom: 0;
+bottom: 0;
+position: fixed;
+width: 100%;
+height: 50px;
+background-color: #007FFF;
+}
+
+footer.controller-homes {
+margin-bottom: 0;
+bottom: 0;
+position: fixed;
+width: 100%;
+height: 50px;
+background-color: #007FFF;
+}
+
+footer.controller-abouts {
+margin-bottom: 0;
+bottom: 0;
+position: fixed;
+width: 100%;
+height: 50px;
+background-color: #007FFF;
+}
+
+.footerinfo {
+  margin-left: 30px;
+  display: inline-block;
+  font-family: "Open Sans";
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+  text-decoration:none;
+}
+
+.footer-links {
+  color: #ffffff;
+  text-decoration:none;
+}
+
+.footerinfo:hover {
+  a {
+    color: inherit;
+    cursor:pointer;
+  }
+}
 
 .searchwrap {
   width: 400px;
@@ -65,11 +180,13 @@
   font-size: 20px;
 }
 
-.large-7.columns-left {
+.small-3.large-6.columns-left {
   a {
     font-family: "Open Sans";
     font-size: 25px;
     color: #007FFF;
+    font-style: normal;
+    font-weight: bold;
   }
 }
 
@@ -90,6 +207,7 @@ body.controller-homes{
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 #profile_photo {
@@ -139,6 +257,7 @@ body.controller-homes{
   display: inline-block;
   padding: 10px;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .top-bar {
@@ -156,14 +275,17 @@ body.controller-homes{
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 25px;
-  padding-right: 9px;
-  padding-left: 40px;
-
+  font-weight: bold;
 }
+
 .flash {
+  background: #007FFF;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bolder;
+  margin-left: 30px;
+  padding-left: 10px;
+  margin-right: 800px;
 }
 
 .title:hover {
@@ -202,11 +324,13 @@ body.controller-homes{
   }
 }
 
-.large-7.columns {
+.small-3.large-6.columns {
   a {
     font-family: "Open Sans";
     font-size: 25px;
     color: #007FFF;
+    font-weight: bold;
+    font-style: normal;
   }
 }
 

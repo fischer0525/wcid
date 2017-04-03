@@ -71,6 +71,14 @@
             <% end %>
           <% end %>
         </div>
+
+        <footer class="controller-<%= params[:controller] %>">
+          <div class="footerinfo">&copy;2017 WCID.org</div>
+          <div class="footerinfo"><%= link_to "About Us", abouts_path, class: "footer-links"%></div>
+          <div class="footerinfo"><%= link_to "Contact Us", contacts_path, class: "footer-links"%></div>
+          <div id="slogan" class="footerinfo"><i>"Connecting communities to volunteer events one click at a time."<i></div>
+        </div>
+        </footer>
         <%= yield %>
 
         </body>

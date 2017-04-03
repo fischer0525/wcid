@@ -7,7 +7,7 @@ class EventList extends Component {
     this.state = {
       events: [],
       currentPage: 1,
-      eventsPerPage: 3,
+      eventsPerPage: 4,
       selectedEventId: null
     };
     this.getData = this.getData.bind(this);
@@ -53,7 +53,8 @@ class EventList extends Component {
     let currentEvents = this.state.events.slice(indexOfFirstEvent, indexOfLastEvent)
 
     let newEvents = currentEvents.map((listEvent, index) =>{
-      let buttonClick= () =>{
+      let buttonClick= (e) =>{
+        e.preventDefault();
       if(listEvent.id===this.state.selectedEventId){
         this.setState({selectedEventId: null})
       }else{
