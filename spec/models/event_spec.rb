@@ -24,3 +24,4 @@ describe Event do
     expect { FactoryGirl.create(:event, address: "100 Market Steet") }.to_not raise_error
     expect { FactoryGirl.create(:event, address: "100 Market Steet") }.to raise_error
   end
+end

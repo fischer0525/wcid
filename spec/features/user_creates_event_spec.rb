@@ -9,7 +9,7 @@ require 'rails_helper'
 # [X] I should see the new bar on the index page
 # [X] I should see an error message if I fill out invalid information
 
-feature 'create a bar link is available to user' do
+feature 'create an event link is available to user' do
   let(:user) {FactoryGirl.create(:user)}
   scenario 'Unauthorized user visits homepage and does not see button to create a new event' do
     visit root_path
@@ -19,7 +19,6 @@ feature 'create a bar link is available to user' do
 
 
   scenario "Authorized user visits homepage and sees button to create event" do
-    admin
     visit new_user_session_path
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
@@ -40,7 +39,6 @@ feature 'create event link is only available to user' do
 
 
   scenario "Authorized user is able to use direct path to new event form" do
-    admin
     visit new_user_session_path
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
@@ -85,7 +83,7 @@ feature 'create event link is only available to user' do
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
     click_button 'Sign In'
-    visit new_bar_path
+    visit new_event_path
 
     fill_in "Event Name", with: "New Event"
     fill_in "Event Date", with: "01/01/11"

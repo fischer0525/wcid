@@ -48,7 +48,7 @@ before_action :authorize_user, except: [:index, :show]
 
   def destroy
     @event = Event.find(params[:id])
-    @Event.delete
+    @event.delete
 
     flash[:notice] = "Event Deleted Successfully"
     redirect_to root_path
