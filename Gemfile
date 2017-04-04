@@ -14,6 +14,7 @@ gem 'foundation-rails'
 gem 'fog'
 gem 'react-rails-img'
 gem 'vcr'
+gem 'webmock'
 
 group :development do
   gem 'listen', '~> 3.0.5'
@@ -27,7 +28,7 @@ group :development, :test do
   gem 'launchy', require: false
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5'
-  gem 'shoulda'
+  gem 'shoulda-matchers'
   gem 'valid_attribute'
   gem 'database_cleaner'
   gem 'coveralls', require: false

@@ -9,7 +9,7 @@ require 'rails_helper'
 # [X] I should see the new bar on the index page
 # [X] I should see an error message if I fill out invalid information
 
-feature 'create a bar link is available to user' do
+feature 'create an event link is available to user' do
   let(:user) {FactoryGirl.create(:user)}
   scenario 'Unauthorized user visits homepage and does not see button to create a new event' do
     visit root_path
