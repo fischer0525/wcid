@@ -19,7 +19,7 @@ feature 'User deletes events' do
     click_button "Sign In"
 
     visit event_path(event)
-    click_link("Delete Bar")
+    click_link("Delete Event")
     expect(page).to have_content("Event Deleted Successfully")
     expect(page).to_not have_content("Website")
   end

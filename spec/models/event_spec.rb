@@ -24,7 +24,7 @@ describe Event do
     expect { FactoryGirl.create(:event, address: "100 Market Steet") }.to_not raise_error
     expect { FactoryGirl.create(:event, address: "100 Market Steet") }.to raise_error
   end
-
+  
   it "should have a valid zip code" do
     expect {
       FactoryGirl.create(
