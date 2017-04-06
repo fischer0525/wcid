@@ -6,6 +6,7 @@ class Event < ApplicationRecord
   validates :city, presence: true
   validates :state, presence: true
   validates :zip, presence: true, length: { is: 5 }
+  validates :description, presence: true
 
   belongs_to :user
 

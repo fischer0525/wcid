@@ -29,7 +29,7 @@ feature 'User creates an event' do
 
     expect(page).to have_content("Event Edited Successfully")
     expect(page).to have_content("Edit")
-    expect(page).to have_content(user.username)
+    expect(page).to have_content(event.event_name)
   end
 
   scenario 'user fills out invalid information' do
@@ -48,17 +48,17 @@ feature 'User creates an event' do
     expect(page).to_not have_content("Event Edited Successfully")
   end
 
-  scenario 'admin fills out missing information' do
+  scenario 'user fills out missing information' do
     visit root_path
     click_link "Sign In"
-    fill_in "Email", with: admin.email
-    fill_in "Password", with: admin.password
+    fill_in "Email", with: user.email
+    fill_in "Password", with: user.password
     click_button "Sign In"
 
     visit event_path(event)
     click_link "Edit Event"
     fill_in "Zip", with: "1913"
-    click_button "Submit"
+    click_button "Save Changes"
 
     expect(page).to have_content("Zip is the wrong length")
     expect(page).to_not have_content("Event Edited Successfully")
