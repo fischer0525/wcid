@@ -1,27 +1,24 @@
-<a href='https://coveralls.io/github/fischer0525/wcid?branch=master'><img src='https://coveralls.io/repos/github/fischer0525/wcid/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Author: Corey Fischer
 
-Things you may want to cover:
+WCID | what.can.I.do? is a web app that connects users to volunteer events. Users can create
+and search/browse for events.
 
-* Ruby version
+https://wcid.herokuapp.com/
 
-* System dependencies
+* Ruby version 2.3.3
 
-* Configuration
+* Database creation $ rake db:create
 
-* Database creation
+* Database initialization $ rake db:migrate
 
-* Database initialization
+* Database seeding $ rake db:seed
 
-* How to run the test suite
+* How to run the test suite $ rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Deployment instructions $ rails s $ npm start
 
 * ...
 
