@@ -26,7 +26,7 @@ class EventList extends Component {
   }
 
   getData() {
-    fetch('http://https://wcid.herokuapp.com/api/v1/events.json')
+    fetch('https://wcid.herokuapp.com/api/v1/events.json')
       .then(response => {
         if (response.ok) {
           return response;
